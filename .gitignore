@@ -48,6 +48,10 @@ po/*~
 # RStudio Connect folder
 rsconnect/
 
+# rproj file
+*.Rproj
+
 # Ignore boot/data
 /boot/data/
+
 
