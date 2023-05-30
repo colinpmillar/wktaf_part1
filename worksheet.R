@@ -39,6 +39,40 @@ draft.data(
   append = TRUE # add on to existing DATA.bib
 )
 
+"https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/FAD/fdi/FDI_spatial_data_EU27.zip"
+
+
+draft.data(
+  data.files = "HadSST.4.0.1.0_median.nc",
+  data.scripts = NULL,
+  originator = "UK MET office",
+  title = "Met Office Hadley Centre observations datasets",
+  year = 2022,
+  source = "https://www.metoffice.gov.uk/hadobs/hadsst4/data/netcdf/HadSST.4.0.1.0_median.nc",
+  file = TRUE,
+  append = TRUE
+)
+
+
+draft.data(
+  data.files = NULL,
+  data.scripts = "ospar-areas.R",
+  originator = "OSPAR",
+  title = "OSPAR areas",
+  file = TRUE,
+  append = TRUE
+)
+
+# 
+deps("boot", installed = FALSE)
+
+install.deps("boot")
+
+
+
+
+
+
 
 
 
